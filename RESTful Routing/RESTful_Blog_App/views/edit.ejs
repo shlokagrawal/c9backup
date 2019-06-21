@@ -1,0 +1,30 @@
+<% include partials/header %>
+<div class="ui main text container segment">
+    <div class="ui huge header">
+        Edit Blog <%=blog.title%>
+    </div>
+    <form class="ui form"action="/blogs/<%=blog._id%>?_method=PUT" method="POST">
+        <!--here the original work of method overide package is done it wll overide the POST method to PUT method through this line ?_method=PUT-->
+        <!--ham ek alag route bhi le sakte jese /blogsupdate aur post method use kar sakte hn -->
+        <!--par ham RESTful routes ka ek protocol follow kar rahe hn that'swhy hamne yeh sab kiya.-->
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="blog[title]" placeholder="Title" value="<%=blog.title%>">    
+        </div>
+        
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="blog[image]" placeholder="Image" value="<%=blog.image%>">
+        </div>
+        
+        <div class="field">
+        <!--<input type="text" name="blog[body]" placeholder="Blog Post Goes Here...">-->
+            <label>Blog Content</label>
+            <textarea name="blog[body]" placeholder="Blog Post Goes Here..." required><%=blog.body%></textarea> 
+            <!--because textarea does not have value attributes-->
+        </div>
+        <!--idhar blog[something] iisliye ddale hn ki aage data gather karte samaye 3 alag variable mn na leke direct req.body.blog se sarra data access karle-->
+        <input class="ui positive big button" type="submit">
+    </form>
+</div>
+<% include partials/footer %>

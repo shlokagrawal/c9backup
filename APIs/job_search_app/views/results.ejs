@@ -1,0 +1,9 @@
+<h2>Welcome!! We Glad To Share You Results!!!</h2>
+
+<ul>
+<% for(var i=0;i< data.length;i++){ %>
+<li><%= data[i]["company"]%>, <%=data[i]["location"]%> => <strong><%= data[i]["title"] %></strong></li>
+<br>
+<% } %>
+</ul>
+<a href="/">Search Again!</a>

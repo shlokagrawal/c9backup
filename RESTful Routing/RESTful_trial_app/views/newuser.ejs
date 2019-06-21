@@ -1,0 +1,11 @@
+<% include partials/header %>
+<form action="/users" method="POST">
+    <label>NAME:</label>
+    <input type="text" name="user[name]" placeholder="name">
+    <br>
+    <label>DESCRIPTION:</label>
+    <textarea name="user[description]" placeholder="description" required></textarea>
+    <br>
+    <input type="submit">
+</form>
+<% include partials/footer %>

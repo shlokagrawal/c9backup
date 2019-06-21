@@ -1,0 +1,10 @@
+<% include partials/header %>
+<h1>INDEX PAGE</h1>
+<% userfound.forEach(function(user){ %>
+<div>
+<h3><%= user.name %></h3>
+<p><%= user.description %></p>
+<a href="/users/<%= user._id%>">Show More</a>
+</div>
+<% }); %>
+<% include partials/footer %>

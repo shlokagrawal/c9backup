@@ -1,0 +1,8 @@
+<% include partials/header %>
+<h1><%=foundUser.name%></h1>
+<p><%=foundUser.description%></p>
+<a href="/users/<%= foundUser._id%>/edit">Edit User</a>
+<form action="/users/<%= foundUser._id%>?_method=DELETE" method="POST">
+<button>Delete User</button>
+</form>
+<% include partials/footer %>

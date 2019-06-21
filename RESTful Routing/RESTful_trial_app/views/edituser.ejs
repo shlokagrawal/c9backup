@@ -1,0 +1,11 @@
+<% include partials/header %>
+<form action="/users/<%=editUser._id%>?_method=PUT" method="POST">
+    <label>NAME:</label>
+    <input type="text" name="user[name]" value="<%=editUser.name%>" placeholder="name">
+    <br>
+    <label>DESCRIPTION:</label>
+    <textarea name="user[description]" placeholder="description" required><%=editUser.description%></textarea>
+    <br>
+    <input type="submit">
+</form>
+<% include partials/footer %>

@@ -1,0 +1,10 @@
+git --version
+git version 2.14.1
+
+refer lecture 370 section 39.
+
+git init - to install git or call up the git for particular repository.
+git add - to add that file in your repository.(if you modify the file you have to add it again using git add filename again)
+git status - it tells about the status of repository where git is install it tells us which file is added & which is commited.
+git commit -m "" - when we add new file we have to commit it with some message so afterwards we can see what we have done in that file by identifying message.
+                and when we change present file on the git we have to first add it and then commit it.

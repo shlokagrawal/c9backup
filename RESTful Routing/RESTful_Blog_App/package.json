@@ -1,0 +1,19 @@
+{
+  "name": "restfulblogapp",
+  "version": "1.0.0",
+  "description": "this will be the app which we are going to create by using the concept called RESTful routing.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shlok Agrawal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-sanitizer": "^1.0.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.3"
+  }
+}
